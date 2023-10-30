@@ -413,6 +413,10 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
     serverSidePluginKeysSet = true;
   }
 
+  // timers debug log
+  console.log('APIKey set?');
+  console.log(process.env.YOUR_ENV_VARIABLE?.length);
+
   return {
     props: {
       serverSideApiKeyIsSet: !!process.env.OPENAI_API_KEY,
