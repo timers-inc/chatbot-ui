@@ -68,6 +68,9 @@ export const ChatbarSettings = () => {
           setIsSettingDialog(false);
         }}
       />
+
+  <img src="/img/logo.svg" style={{ padding:'20px', maxWidth:'200px' }} />
+
     </div>
   );
 };
