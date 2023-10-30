@@ -413,12 +413,6 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
     serverSidePluginKeysSet = true;
   }
 
-  // timers debug log
-  console.log('OPENAI_API_KEY set?');
-  console.log(process.env.OPENAI_API_KEY?.length);
-  console.log('ASHIINA_TEST set?');
-  console.log(process.env.ASHIINA_TEST?.length);
-
   return {
     props: {
       serverSideApiKeyIsSet: !!process.env.OPENAI_API_KEY,
