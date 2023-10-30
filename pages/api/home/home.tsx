@@ -414,8 +414,10 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   }
 
   // timers debug log
-  console.log('APIKey set?');
+  console.log('OPENAI_API_KEY set?');
   console.log(process.env.OPENAI_API_KEY?.length);
+  console.log('ASHIINA_TEST set?');
+  console.log(process.env.ASHIINA_TEST?.length);
 
   return {
     props: {
